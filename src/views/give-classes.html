@@ -62,24 +62,17 @@
             <label for="subject">Materia</label>
             <select name="subject" id="subject" required>
               <option value="">Selecione uma opção</option>
-              <option value="1">Artes</option>
-              <option value="2">Biologia</option>
-              <option value="3">Ciência</option>
-              <option value="4">Educação Física</option>
-              <option value="5">Física</option>
-              <option value="6">Geografia</option>
-              <option value="7">História</option>
-              <option value="8">Matemática</option>
-              <option value="9">Português</option>
-              <option value="10">Quimica</option>
+              {%for subject in subjects%}
+              <option value="{{loop.index}}">{{subject}}</option>
+              {%endfor%}
             </select>
           </div>
 
           <div class="input-block">
             <label for="cost">Custo de sua hora / aula
-                  <small>(R$)</small>
-                </label>
-            <input type="cost" id="cost" type="number" required>    
+              <small>(R$)</small>
+            </label>
+            <input name="cost"type="cost" id="cost" type="number" required>
           </div>
         </fieldset>
         <fieldset id="schedule-items">
@@ -92,7 +85,7 @@
               <select name="weekday[]" required>
                 <option value="">Selecione uma opção</option>
                 {%for weekday in weekdays%}
-                <option value="{{loop.index0}}" {{ "selected" if filters.weekday == loop.index0}}>{{weekday}}</option>
+                <option value="{{loop.index0}}">{{weekday}}</option>
                 {%endfor%}
               </select>
             </div>
@@ -110,14 +103,14 @@
       <footer>
         <p>
           <img src="/images/icons/warning.svg" alt="Aviso importante">
-             Importante! <br> Preencha todos os dados
+          Importante! <br> Preencha todos os dados
         </p>
         <button type="submit" form="create-classes">Salvar cadastro</button>
       </footer>
     </main>
   </div>
 
-<script src="/scripts/addField.js"></script>
+  <script src="/scripts/addField.js"></script>
 </body>
 
 </html>

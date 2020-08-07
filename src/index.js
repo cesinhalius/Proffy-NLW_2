@@ -37,6 +37,12 @@ const app = express();
 const nunjuck = require('nunjucks');
 
 
+function getSubject(subjectNumber){
+  const position = +subjectNumber - 1
+  return subjects[position]
+}
+
+
 function pageIndex(req,res){
   return res.render("main.html")
 }
@@ -47,7 +53,22 @@ function pageStudy(req,res){
 }
 
 function pageGiveClasses(req,res){
-    return res.render("give-classes.html")
+  const dados  = req.query
+  
+  const isNotEmpty = Object.keys(dados).length != 0
+  
+  if(isNotEmpty){
+
+      dados.subject = getSubject(dados.subject)
+    
+      teachers.push(dados)
+
+
+      return res.redirect("study")
+  }
+  
+  
+  return res.render("give-classes.html", {subjects, weekdays})
 }
 //configurar nunjucks
 nunjuck.configure('src/views',{
