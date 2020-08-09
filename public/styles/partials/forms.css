@@ -1,8 +1,9 @@
+
 .select-block label,
 .input-block label,
-.textarea-block textarea {
+.textarea-block label  {
   font-size: 1.4rem;
-  color: var(--color-text-complement);
+  color: var(--color-text-complement)
 }
 
 .input-block input,
@@ -18,7 +19,8 @@
   padding: 0 1.6rem;
   font: 1.6rem Archivo;
 }
-.textarea-block textarea{
+
+.textarea-block textarea {
   padding: 1.2rem 1.6rem;
   height: 16rem;
 
@@ -26,20 +28,24 @@
 }
 
 .input-block,
-.textarea-block{
+.textarea-block {
   position: relative;
 }
 
-
 .input-block:focus-within::after,
 .textarea-block:focus-within::after {
-  content: "";
-
+  content: '';
+  
   width: calc(100% - 3.2rem);
   height: 2px;
   background: var(--color-primary-light);
-
   position: absolute;
   left: 1.6rem;
-  bottom: 0px;
+  bottom: 0;
+}
+
+label small {
+  font-size: 1.2rem;
+  padding-left: 1.2rem;
+  color: var(--color-small-info)
 }

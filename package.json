@@ -1,14 +1,22 @@
 {
-  "name": " NextLevelWeek2 ",
+  "name": "NextLevelWeek2",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/index.js"
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cesinhalius/Proffy-NLW_2.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cesinhalius/Proffy-NLW_2/issues"
+  },
+  "homepage": "https://github.com/cesinhalius/Proffy-NLW_2#readme",
   "dependencies": {
     "express": "^4.17.1",
     "nunjucks": "^3.2.2",
