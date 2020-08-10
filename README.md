@@ -14,7 +14,7 @@
 ## Preview
 
 <p align="center">
-      <img src="https://github.com/cesinhalius/Proffy-NLW_2/blob/master/public/images/telaPrincipal.PNG.PNG">
+      <img src="https://github.com/cesinhalius/Proffy-NLW_2/blob/master/public/images/telaPrincipal.PNG">
 </p>
 
 
