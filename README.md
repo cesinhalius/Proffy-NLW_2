@@ -2,7 +2,7 @@
 
 
 
-## 📋 Índice
+##  Índice
 
 - [Sobre](#-Sobre)
 - [Tecnologias utilizadas](#-Tecnologias-utilizadas)
@@ -11,6 +11,11 @@
 
 ---
 
+## Preview
+
+<p align="center">
+      <img src="./public/images/imgem.png">
+</p>
 
 
 ##  Sobre 
