@@ -14,7 +14,7 @@
 ## Preview
 
 <p align="center">
-      <img src="./public/images/imgem.png">
+      <img src="https://github.com/cesinhalius/Proffy-NLW_2/blob/master/public/images/imgem.PNG">
 </p>
 
 
